@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="https://laravel.com/img/logotype.min.svg" width="400"></p>
 
 # Aplikasi Laundry Sederhana
@@ -59,3 +60,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 Referensi:
+=======
+# app-laundry
+laundry app
+>>>>>>> f80bd9e54c2f4bd1278fb0267f121abd75d85c0b
