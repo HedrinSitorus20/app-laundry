@@ -2,28 +2,42 @@
 
 # Aplikasi Laundry Sederhana
 
-Aplikasi ini merupakan aplikasi laundry sederhana yang dibuat dengan framework Laravel 7 (sudah diupgrade ke Laravel 9). Aplikasi ini adalah project untuk menyelesaikan UAS Metodologi Penulisan Ilmiah ITB STIKOM Bali.
+Aplikasi ini merupakan aplikasi laundry sederhana yang dibuat dengan framework Laravel 7 (sudah diupgrade ke Laravel 9). Aplikasi ini adalah project untuk belajar laravel
 
-Daftar/Register admin dengan url `/register-admin`. Secret key dapat diubah di env atau default "Secret123".
+Daftar/Register admin dengan url `/register-admin`.
 
 Login admin:  
-Email : admin@laundryxyz.com  
-Pass : admin123
+Email    : admin@laundryxyz.com  
+Password : admin123
 
 ## Instalasi
 
-1. Copy dan rename .env.example menjadi .env
-2. Konfigurasi .env sesuai kebutuhan
-3. Buat app key:
+1. update composer :
+```
+composer update
+```
 
+2. Run dan buat file  .env.example menjadi .env
+```
+cp .env.example .env
+```
+3. Konfigurasi .env sesuai kebutuhan
+
+4. Buat app key:
 ```
 php artisan key:generate
 ```
-
-4. Jalankan migrasi dan seed:
-
+5. Jalankan migrasi dan seed:
+```
+php artisan migrate
+```
+6. Jalankan migrate
 ```
 php artisan migrate:fresh --seed
+```
+7. Run aplikasi laundry:
+```
+php artisan serve
 ```
 
 ## Informasi Tambahan
@@ -43,3 +57,5 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 -   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+Referensi:
