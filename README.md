@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <p align="center"><img src="https://laravel.com/img/logotype.min.svg" width="400"></p>
 
 # Aplikasi Laundry Sederhana
