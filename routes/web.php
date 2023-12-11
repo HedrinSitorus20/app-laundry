@@ -37,6 +37,7 @@ Route::group(['middleware' => 'language'], function () {
     Route::post('register-admin', [RegisterController::class, 'registerAdmin'])->name('register.register_admin');
 });
 
+
 // User profile routes
 Route::group([
     'prefix' => 'profile',
