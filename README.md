@@ -7,7 +7,7 @@ Aplikasi ini merupakan aplikasi laundry sederhana yang dibuat dengan framework L
 Daftar/Register admin dengan url `/register-admin`.
 
 Login admin:
-Email    : admin@laundryapp.com
+Email    : admin@laundryapp.com   
 Password : admin123
 
 ## Instalasi
