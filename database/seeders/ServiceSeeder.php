@@ -17,7 +17,8 @@ class ServiceSeeder extends Seeder
     {
         Service::insert([
             ['name' => 'Cuci', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Setrika', 'created_at' => now(), 'updated_at' => now()]
+            ['name' => 'Setrika', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Cuci + Setrika', 'created_at' => now(), 'updated_at' => now()]
         ]);
     }
 }
