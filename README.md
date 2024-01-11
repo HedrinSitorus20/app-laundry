@@ -6,8 +6,8 @@ Aplikasi ini merupakan aplikasi laundry sederhana yang dibuat dengan framework L
 
 Daftar/Register admin dengan url `/register-admin`.
 
-Login admin:  
-Email    : admin@laundryxyz.com  
+Login admin:
+Email    : admin@laundryapp.com
 Password : admin123
 
 ## Instalasi
@@ -35,10 +35,15 @@ php artisan migrate
 ```
 php artisan migrate:fresh --seed
 ```
-7. Run aplikasi laundry:
+7. membuat symlink (symbolic link) dari direktori penyimpanan (storage) ke direktori publik (public).
+```
+php artisan storage:link 
+```
+8. Run aplikasi laundry:
 ```
 php artisan serve
 ```
+
 
 ## Informasi Tambahan
 
