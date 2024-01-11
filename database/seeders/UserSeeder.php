@@ -30,6 +30,12 @@ class UserSeeder extends Seeder
                 'password' => Hash::make('bambang123'),
                 'name' => 'Admin laundry',
                 'role' => Role::Admin->value,
+            ],
+            [
+                'email' => 'user@laundryapp.com',
+                'password' => Hash::make('user1234'),
+                'name' => 'User laundry',
+                'role' => Role::Member->value,
             ]
             // Tambahkan lebih banyak pengguna di sini jika diperlukan
         ];
