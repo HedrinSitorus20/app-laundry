@@ -17,8 +17,9 @@ class ServiceTypeSeeder extends Seeder
     public function run()
     {
         ServiceType::insert([
-            ['id' => 1, 'name' => 'Regular Service', 'description' => 'Layanan reguler dengan lama waktu pengerjaan yang tidak tentu', 'cost' => 0, 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 2, 'name' => 'Priority Service', 'description' => 'Layanan prioritas dengan waktu pengerjaan satu hari', 'cost' => 10000, 'created_at' => now(), 'updated_at' => now()]
+            ['id' => 1, 'name' => 'Regular Service', 'description' => 'Layanan reguler dengan lama waktu pengerjaan 3 hari', 'cost' => 10000, 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 2, 'name' => 'Priority Service', 'description' => 'Layanan prioritas dengan waktu pengerjaan satu hari', 'cost' => 15000, 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 3, 'name' => 'Priority Service', 'description' => 'Layanan prioritas utam dengan waktu pengerjaan 6 jam', 'cost' => 30000, 'created_at' => now(), 'updated_at' => now()]
         ]);
     }
 }

@@ -18,12 +18,24 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $user = new User([
-            'email' => 'admin@laundryxyz.com',
-            'password' => Hash::make('admin123'),
-            'name' => 'Admin Laundry',
-            'role' => Role::Admin->value,
-        ]);
-        $user->save();
+        $users = [
+            [
+                'email' => 'admin@laundryapp.com',
+                'password' => Hash::make('admin123'),
+                'name' => 'Admin Laundry',
+                'role' => Role::Admin->value,
+            ],
+            [
+                'email' => 'hedrin@laundryapp.com',
+                'password' => Hash::make('bambang123'),
+                'name' => 'Admin laundry',
+                'role' => Role::Admin->value,
+            ]
+            // Tambahkan lebih banyak pengguna di sini jika diperlukan
+        ];
+        foreach ($users as $userData) {
+            $user = new User($userData);
+            $user->save();
+        }
     }
 }
